@@ -18,9 +18,11 @@ function deleteLast() {
 function calculateResult() {
   try {
     const result = eval(input);
-    document.getElementById("result").value = result;
+    const formattedResult = result.toLocaleString(); // Add comma formatting
+    document.getElementById("result").value = formattedResult;
     input = result.toString();
   } catch (error) {
     document.getElementById("result").value = "Error";
   }
 }
+
