@@ -9,15 +9,21 @@
     <input type="text" id="result" readonly>
     <table>
       <tr>
+        <td><button onclick="appendInput('(')">(</button></td>
+        <td><button onclick="appendInput(')')">)</button></td>
         <td><button onclick="clearResult()">C</button></td>
         <td><button onclick="deleteLast()">DEL</button></td>
-        <td><button onclick="appendInput('Math.pow(')">x<sup>y</sup></button></td>
-        <td><button onclick="appendInput('Math.exp(')">exp</button></td>
       </tr>
       <tr>
         <td><button onclick="appendInput('Math.sin(')">sin</button></td>
         <td><button onclick="appendInput('Math.cos(')">cos</button></td>
         <td><button onclick="appendInput('Math.tan(')">tan</button></td>
+        <td><button onclick="appendInput('Math.pow(')">x<sup>y</sup></button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendInput('Math.sqrt(')">&#8730;</button></td>
+        <td><button onclick="appendInput('Math.log10(')">log</button></td>
+        <td><button onclick="appendInput('Math.exp(')">exp</button></td>
         <td><button onclick="appendInput('/')">/</button></td>
       </tr>
       <tr>
@@ -40,7 +46,7 @@
       </tr>
       <tr>
         <td><button onclick="appendInput('Math.PI')">π</button></td>
-        <td><button onclick="appendInput('Math.sqrt(')">&#8730;</button></td>
+        <td><button onclick="appendInput('Math.E')">e</button></td>
         <td><button onclick="appendInput('0')">0</button></td>
         <td><button onclick="appendInput('.')">.</button></td>
       </tr>
