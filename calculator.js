@@ -1,8 +1,13 @@
 let input = "";
 
 function appendInput(value) {
-  input += value;
-  document.getElementById("result").value = input;
+  if (!isNaN(value) || value === '.') { // Check if value is a number or decimal point
+    input += value;
+    document.getElementById("result").value = input;
+  } else {
+    input += value;
+    document.getElementById("result").value = input;
+  }
 }
 
 function clearResult() {
@@ -25,4 +30,3 @@ function calculateResult() {
     document.getElementById("result").value = "Error";
   }
 }
-
