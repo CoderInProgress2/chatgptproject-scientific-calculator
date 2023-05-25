@@ -11,7 +11,13 @@
       <tr>
         <td><button onclick="clearResult()">C</button></td>
         <td><button onclick="deleteLast()">DEL</button></td>
-        <td><button onclick="appendInput('**')">^</button></td>
+        <td><button onclick="appendInput('Math.pow(')">x<sup>y</sup></button></td>
+        <td><button onclick="appendInput('Math.exp(')">exp</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendInput('Math.sin(')">sin</button></td>
+        <td><button onclick="appendInput('Math.cos(')">cos</button></td>
+        <td><button onclick="appendInput('Math.tan(')">tan</button></td>
         <td><button onclick="appendInput('/')">/</button></td>
       </tr>
       <tr>
@@ -33,9 +39,13 @@
         <td><button onclick="appendInput('+')">+</button></td>
       </tr>
       <tr>
+        <td><button onclick="appendInput('Math.PI')">π</button></td>
+        <td><button onclick="appendInput('Math.sqrt(')">&#8730;</button></td>
         <td><button onclick="appendInput('0')">0</button></td>
         <td><button onclick="appendInput('.')">.</button></td>
-        <td><button onclick="calculateResult()">=</button></td>
+      </tr>
+      <tr>
+        <td colspan="4"><button onclick="calculateResult()">=</button></td>
       </tr>
     </table>
   </div>
